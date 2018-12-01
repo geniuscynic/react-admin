@@ -1,0 +1,42 @@
+{
+    "success": true,
+    "data": {
+        "defaultSelectedKeys": ["1"],
+        "defaultOpenKeys": ["sub1"],
+        "submeus": [{
+            "key": "sub1",
+            "title": "subnav 1",
+            "icon": "user",
+            "items": [{
+                "key": "1",
+                "title": "Artilce",
+                "link": "/"
+            },{
+                "key": "2",
+                "title": "category",
+                "link": "/category"
+            },{
+                "key": "3",
+                "title": "article",
+                "link": "/article"
+            }]
+        },{
+            "key": "sub2",
+            "title": "subnav 1",
+            "icon": "user",
+            "items": [{
+                "key": "4",
+                "title": "Artilce",
+                "link": "/"
+            },{
+                "key": "5",
+                "title": "category",
+                "link": "/category"
+            },{
+                "key": "6",
+                "title": "article",
+                "link": "/article"
+            }]
+        }]
+    }
+}
