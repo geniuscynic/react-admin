@@ -15,6 +15,7 @@ const buildSider = (props) => {
           trigger={null}
           collapsible
           collapsed={collapsed}
+          
           >
             <div className="logo" />
             <Menu
@@ -26,7 +27,7 @@ const buildSider = (props) => {
             >
             {
               submeus.map((suhmenu) => 
-                  <SubMenu key={suhmenu.get('key')} title={<span><Icon type={suhmenu.get('icon')} />{suhmenu.get('title')}</span>}>
+                  <SubMenu key={suhmenu.get('key')} title={<span><Icon type={suhmenu.get('icon')} /><span>{suhmenu.get('title')}</span></span>}>
                     {
                       suhmenu.get('items').map((item) =>
                         <Menu.Item key={item.get('key')}><Link to={item.get('link')}>{item.get('title')}</Link></Menu.Item>

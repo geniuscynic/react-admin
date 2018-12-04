@@ -7,7 +7,6 @@ const defaultState = fromJS({
         submeus: []
 });
 
-
 const changeLeftMenu = (state, action) => {
     return state.merge({
         defaultSelectedKeys: action.defaultSelectedKeys,
@@ -25,6 +24,7 @@ export default (state = defaultState, action) => {
             return changeLeftMenu(state, action);
 
        default:
+            
             return state;
     }   
     

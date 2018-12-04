@@ -11,7 +11,7 @@ import { Layout  } from 'antd';
 import  Header  from './common/header';
 import  LeftSide  from './common/leftside';
 import  Main  from './common/main';
-
+import  Breadcrumb  from './common/breadcrumb';
 
 class App extends Component {
   
@@ -20,15 +20,15 @@ class App extends Component {
     return (
       <Provider store = {store}>
         <BrowserRouter>
-        <Layout style={{ height: '100%' }}>
-          <LeftSide />
-          <Layout >
-            <Header />
-            <Main /> 
-            <Footer style={{ textAlign: 'center' }}>by 月落追魂</Footer>
+          <Layout style={{ height: '100%' }}>
+            <LeftSide />
+            <Layout >
+              <Header />
+              <Breadcrumb />
+              <Main /> 
+              <Footer style={{ textAlign: 'center' }}>by 月落追魂</Footer>
+            </Layout>
           </Layout>
-          
-        </Layout>
         </BrowserRouter>
       </Provider>
     );

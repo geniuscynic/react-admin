@@ -7,7 +7,7 @@ const Header = (props) => {
   const { Header } = Layout;
   const { collapsed, toggle } = props;
   return (
-    <Header className="header" style={{ background: '#fff', padding: 0 }}>
+    <Header className="header">
       <Icon
               className="trigger"
               type={collapsed ? 'menu-unfold' : 'menu-fold'}
